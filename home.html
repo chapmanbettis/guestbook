@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MojoTech Guestbook</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <section class="background">
+      
+      <img src="img/logo.png" alt="mojo-logo" class="logo">
+      
+      <div id="welcome-form">
+        <div class="welcome-text">
+          <h2>Welcome!</h2>
+            <h1>Let your host know you're here.</h1>
+        </div>
+        <form id="guestName" method="post" class="name-input">
+          <input type="text" name="firstname" placeholder="What's your name?" class="input" id="first-name">
+          <button id="submitbutton" class="btn">Send Notification</button>          
+        </form>
+      </div>
+
+      <div id="confirmation" class="hide">
+        <h1>Thank you!</h1>
+        <h3>Your notification was sent! Feel free to have a seat and we’ll be with you shortly.</h3>            
+      </div>
+
+    </section>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+  </body>
+
+</html>
+
+<!--Zapier Direct Messages: https://hooks.zapier.com/hooks/catch/3124592/kngbo4/-->
+<!--IFTTT: action="https://maker.ifttt.com/trigger/sign_in/with/key/c8HO66NoIYZ-tsXgsvSOo-"-->
