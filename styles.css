@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'altisBook';
+    src: url(src/Altis-Book.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'altis';
+    src: url(src/Altis.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'altisMedium';
+    src: url(src/Altis-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'gtAmerica';
+    src: url(src/GT-America-Regular.woff) format('woff');
+    font-weight: 500;
+}
+
+
+body {
+    font-size: 16px;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+h1 {
+    font-family:'altis', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0 0 10px;
+    color: #181A1B;
+}
+
+
+h2 {
+    font-family: 'altisBook', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0 0 12px;
+    color: #8DABBC;
+}
+
+h3 {
+    font-family: 'gtAmerica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 10px 0;
+    color: #8DABBC;
+}
+
+h4 {
+    font-family: 'altisMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 6.75em;
+    letter-spacing: 1px;
+    line-height: 1em;
+    margin: 400px 0 40px 0;
+    color: #181A1B;
+    text-align: center;
+
+}
+
+h5 {
+    font-family: 'gtAmerica', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 2.4em;
+    line-height: 1em;
+    margin:  0 0 0 0;
+    color: #8DABBC;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
+
+font-weight: normal;
+
+}
+
+
+.background {
+    background-size: 100%;
+    background-image: url(img/lines.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+#welcome-form {
+    margin-top: 108px;
+    margin-left: 104px;
+    margin-right: auto;
+    display: block;
+    background: none;
+    transition: opacity 1s ease;
+    
+    position: absolute;
+    z-index: 1000;
+}
+
+.welcome-text {
+    margin-bottom: 104px;
+}
+
+#confirmation {
+    margin: 108px 0 0 104px;
+    padding-top: 44px;
+    display: block;
+    background: none;
+    width: 640px;
+    transition: opacity .5s ease;
+    transition-delay: 0;
+
+    position: absolute;
+    z-index: 500;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.btn {
+    flex-direction: row;
+    background-color: #28BA00;
+    height: 72px;
+    width: auto;
+    padding: 24px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    display: block;
+    font-family: 'gtAmerica';
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.input {
+    height: 72px;
+    width: 420px;
+    border: 2px;
+    border-color: #8DABBC;
+    background-color: #F4F4F4;
+    border-radius: 3px 0 0 3px;
+    
+    font-family: 'gtAmerica';
+    font-size: 18px;
+    color: #8DABBC;
+    text-align: left;
+    cursor: pointer;
+    padding: 0 0 0 24px;
+
+}
+
+.name-input {
+    display: flex;
+}
+
+::placeholder {
+    color: #93A1A9
+}
+
+.btn:active {
+    background-color: #22A000;
+}
+
+.btn::after {
+    content: '→';
+    display: inline;
+    margin: 0 0 0 24px;
+    padding: 0;
+    color: #fff;
+    font-family: 'altis';
+    font-size: 24px;
+    line-height: 0;
+}
+
+.logo {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 32px 32px 0 0;
+    width: 40px;
+    height: auto;
+       
+} 
+
+/* .animate-in {
+    animation: fadeIn .5s ease-in;
+}
+
+.animate-out {
+    transition: opacity .5s ease-out;
+    opacity: 0;
+} */
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
+    .content {
+        background-image: url(img/linesTall.png);
+    }
+
+}
+
+/* iMac Screen Styles */
+
+
+.imacBg {
+    background-image: url(img/linesLarge.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+}
+
+.msg {
+    width: 100vw;
+}
+
+.line {
+    background-color: #28BA00;
+    height: 140px;
+    width: 2px;
+    margin: 48px auto;
+}
